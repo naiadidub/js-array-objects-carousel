@@ -136,6 +136,12 @@ function slideUp() {
 next.addEventListener("click", slideDown);
 prev.addEventListener("click", slideUp);
 
-setInterval(function() {
+let autoSliders = setInterval(function pippo() {
   slideDown()
 }, 3000);
+
+document.getElementById('stopslide').addEventListener('click', stopSlidess)
+
+function stopSlidess (){
+  clearInterval(autoSliders)
+}

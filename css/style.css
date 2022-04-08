@@ -75,3 +75,8 @@
 .prev {
   bottom: -20px;
 }
+#stopslide{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
